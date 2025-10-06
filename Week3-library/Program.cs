@@ -1,26 +1,13 @@
-﻿class Book
-{
-    string Title;
-    string Author;
-    string ISBN;
+﻿using Week3_library;
 
+class Program
+{
     static void Main(string[] args)
     {
-        Book book = new Book();
+        // Create a new instance (object) of the Book class
+        // Note how the object name differs from the class name
+        Book book = new Book("C# for beginners", "Bill Gates", "1234567");
 
-
-        book.Title = "C# for beginers";
-        book.Author = "BillGates";
-        book.ISBM = "12345678";
-
-        Console.WriteLine
+        book.DisplayInfo();
     }
-
-
-
-
-
-
-
-
 }

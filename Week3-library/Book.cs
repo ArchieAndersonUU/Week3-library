@@ -19,30 +19,12 @@ namespace Week3_library
             ISBN = bookISBN;
         }
 
-        void DisplayInfo()
+       public void DisplayInfo()
         {
             Console.WriteLine($"Book title: {Title}");
             Console.WriteLine($"Book Author: {Author}");
             Console.WriteLine($"Book ISBN: {ISBN}");
             Console.WriteLine();
-        }
-
-        static void Main(string[] args)
-        {
-            Book book = new Book("c# for beginners", "Bill Gates", "1234567");
-
-
-          //  book.Title = "C# for beginers";
-          //  book.Author = "BillGates";
-          //  book.ISBN = "12345678";
-
-          //  Book book1 = new Book();
-          //  book1.Title = "C# Methods and classes";
-          //  book1.Author = "Microsoft";
-          //  book1.ISBN = "55667778";
-
-            book.DisplayInfo();
-           // book1.DisplayInfo();
         }
     }
 }
